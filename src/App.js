@@ -1,24 +1,19 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Plants from './Pagina/plants';
+import Registro from './Pagina/Registro';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.min.js";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes> {/* Encierra todas las rutas dentro del componente <Routes> */}
+        <Route path="/plants" element={<Plants />} /> {/* Utiliza el atributo element para definir los componentes */}
+        <Route path="/registrar" element={<Registro />} />
+      </Routes>
+    </Router>
   );
 }
 

@@ -1,0 +1,40 @@
+/* Estilos para el Navbar */
+.navbar {
+  background-color: #28a745; /* Color de fondo del navbar (verde) */
+  padding: 10px 0; /* Espaciado interno del navbar */
+  align-items: center;
+}
+
+.navbar-brand {
+  font-size: 1.5rem; /* Tamaño de fuente del branding */
+  font-weight: bold; /* Peso de la fuente del branding */
+  color: rgb(12, 223, 8); /* Color del texto del branding (blanco) */
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.1rem; /* Tamaño de fuente de los enlaces del navbar */
+  margin-right: 15px; /* Espaciado derecho entre enlaces */
+  color: green; /* Color del texto de los enlaces (blanco) */
+}
+
+/* Estilos para el buscador */
+.container input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #28a745; /* Borde verde para el buscador */
+  box-sizing: border-box;
+}
+
+/* Estilos para las tarjetas */
+.card {
+  margin-bottom: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid #28a745; /* Borde verde para las tarjetas */
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
